@@ -28,7 +28,7 @@ app.use(cors());
     const randomNumber = generateRandomCode();
     const data = {
       code: randomNumber,
-    };  
+    };
     const createdCode = await CreateCode(data);
     return res.status(200).json({
       status: true,
